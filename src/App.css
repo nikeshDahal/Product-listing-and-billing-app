@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+  background-color: rgb(199, 209, 197);
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.records-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #b2bcd1;
+  min-height: 10vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.record {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.record .record-name,
+.input-container .name-input {
+  flex-basis: 50%;
+}
+
+.record .record-price,
+.input-container .price-input {
+  flex-basis: 20%;
+}
+
+.record .record-name span {
+  font-size: 20px;
+  color: #40495c;
+}
+
+.record .record-price span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #12203d;
+}
+
+.input-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input-container input {
+  padding: 10px;
+  margin: 10px;
+  line-height: 20px;
+  font-size: 20px;
+}
+.removeitems:hover {
+  background-color: #fa0b0b;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.delete-button:hover {
+  background-color: #e00e0e;
+}
+.edit-button:hover {
+  background-color: #0aee28;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
