@@ -200,13 +200,16 @@ function Billinglist() {
         <div className="add-record">
           <button
             onClick={(event) =>
-              setEntry([...entry, { product: selectedProduct, quantity }])
-            }
+              setEntry(
+                [...entry,
+                  { product: selectedProduct, quantity }
+                ])
+            } 
             // onClick={(e) =>
             //   !editMode ? addNewRecord() : updateRecord(e, selectedRecordId)
             // }
           >
-            <span>{`Add entry`}</span>
+            <span>Add entry</span>
           </button>
           <div className="price-input">
             <input
