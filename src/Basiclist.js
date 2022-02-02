@@ -140,8 +140,7 @@ function Basiclist() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header"></header>
+    <div className="Basiclist">
       <div className="records-container">
         <h3>List of Products </h3>  
         {records.map((r, index) => (
